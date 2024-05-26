@@ -1,7 +1,6 @@
-
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #E4BB8E;
+    --primary: #664C2F;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
@@ -15,11 +14,13 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 *, *:before, *:after {
@@ -27,20 +28,21 @@ body {
     box-sizing: border-box;
 }
 .cs-topper {
-    font-size: var(--topperFontSize);
+    font-family: 'Rubik', sans-serif;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: inherit;
     letter-spacing: .1em;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
 }
 
 .cs-title {
+    font-family: 'Rubik', sans-serif;
     font-size: var(--headerFontSize);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
@@ -50,6 +52,7 @@ body {
 }
 
 .cs-text {
+    font-family: 'Rubik', sans-serif;
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: inherit;
@@ -66,13 +69,14 @@ body {
 @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
       overflow: hidden;
+      font-family: 'Rubik', sans-serif;
     }
     #cs-navigation {
       width: 100%;
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
       padding: 0.75rem 1rem;
-      background-color: #fff;
+      background-color: #FFFFF0;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       position: fixed;
       z-index: 10000;
@@ -81,7 +85,7 @@ body {
       content: "";
       width: 100%;
       height: 0vh;
-      background: rgba(0, 0, 0, 0.6);
+      background: #FFFFF0(0, 0, 0, 0.6);
       opacity: 0;
       display: block;
       position: absolute;
@@ -165,7 +169,7 @@ body {
     #cs-navigation .cs-line {
       width: 100%;
       height: 2px;
-      background-color: #1a1a1a;
+      background-color: #FFFFF0;
       border-radius: 2px;
       position: absolute;
       left: 50%;
@@ -197,7 +201,7 @@ body {
       width: 100%;
       height: auto;
       padding-bottom: 2.4em;
-      background-color: #fff;
+      background-color: #FFFFF0;
       box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
       opacity: 0;
       position: absolute;
@@ -274,6 +278,7 @@ body {
     #cs-navigation .cs-li-link {
       /* 16px - 24px */
       font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-family: 'Rubik', sans-serif;
       line-height: 1.2em;
       text-decoration: none;
       margin: 0;
@@ -286,7 +291,7 @@ body {
       content: "";
       width: 100%;
       height: 1px;
-      background: currentColor;
+      background: #FFFFF0;
       opacity: 1;
       display: none;
       position: absolute;
@@ -364,6 +369,7 @@ body {
     #cs-navigation .cs-li-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1vw, 1rem);
+      font-family: 'Rubik', sans-serif;
       line-height: 1.5em;
       text-decoration: none;
       margin: 0;
@@ -391,6 +397,7 @@ body {
       transition: width 0.3s;
     }
     #cs-navigation .cs-button-solid {
+      font-family: 'Rubik', sans-serif;
       font-size: 1rem;
       font-weight: 700;
       /* 46px - 56px */
@@ -431,175 +438,179 @@ body {
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-856 {
-      /* centers button */
-      text-align: center;
-      /* 116px - 164px top */
-      /* 60px - 100px  bottom */
-      padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
-      background-color: #f7f7f7;
-      /* clips the svg wave from overflowing */
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
-    }
-    #hero-856 .cs-container {
-      width: 100%;
-      max-width: 80rem;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 3rem;
-    }
-    #hero-856 .cs-content {
-      max-width: 39.375rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    #hero-856 .cs-topper {
-      font-size: 1rem;
-      line-height: 1.2em;
-      text-transform: uppercase;
-      text-align: inherit;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 0.25rem;
-      display: block;
-    }
-    #hero-856 .cs-title {
-      /* 39px - 61px */
-      font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-      font-weight: 900;
-      line-height: 1.2em;
-      text-align: center;
-      /* 23 characters including spaces wide */
-      max-width: 23ch;
-      margin: 0 0 1rem 0;
-      color: var(--headerColor);
-      position: relative;
-    }
-    #hero-856 .cs-text {
-      /* 16px - 20px */
-      font-size: clamp(1rem, 1.5vw, 1.25rem);
-      line-height: 1.5em;
-      text-align: center;
-      width: 100%;
-      max-width: 33.1875rem;
-      /* 28px - 40px */
-      margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
-      color: var(--bodyTextColor);
-    }
-    #hero-856 .cs-button-solid {
-      font-size: 1rem;
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-decoration: none;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      color: #fff;
-      min-width: 9.375rem;
-      padding: 0 1.5rem;
-      background-color: var(--primary);
-      border-radius: 0.25rem;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-    }
-    #hero-856 .cs-button-solid:before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 0%;
-      background: #000;
-      opacity: 1;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      border-radius: 0.25rem;
-      transition: width 0.3s;
-    }
-    #hero-856 .cs-button-solid:hover:before {
-      width: 100%;
-    }
-    #hero-856 .cs-picture {
-      width: 100%;
-      max-width: 35.625rem;
-      /* 400px - 712px */
-      height: clamp(25rem, 95vw, 44.5rem);
-      /* 100px - 200px */
-      border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
-      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
-      /* clips the img tag corners */
-      overflow: hidden;
-      display: block;
-      position: relative;
-    }
-    #hero-856 .cs-picture img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      /* makes image act as a background image */
-      object-fit: cover;
-      /* ensures the top of the images is at the top of the container, no heads getting cut off */
-      object-position: top;
-    }
-    #hero-856 .cs-wave {
-      /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
-      width: 320%;
-      height: auto;
-      display: block;
-      position: absolute;
-      left: 50%;
-      bottom: -1px;
-      transform: translateX(-50%);
-      z-index: -1;
-    }
+  #hero-856 {
+    /* centers button */
+    text-align: center;
+    /* 116px - 164px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    background-color: #FAF0E6;
+    /* clips the svg wave from overflowing */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
-  /* Small Desktop - 1024px */
-  @media only screen and (min-width: 64rem) {
-    #hero-856 {
-      text-align: left;
-    }
-    #hero-856 .cs-container {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    #hero-856 .cs-content {
-      width: 40vw;
-      /* prevents flex-box from squishing it */
-      flex: none;
-      align-items: flex-start;
-      /* sends it to the right in the 2nd position */
-      order: 2;
-    }
-    #hero-856 .cs-title,
-    #hero-856 .cs-text {
-      text-align: left;
-    }
-    #hero-856 .cs-picture {
-      /* 623px - 814px */
-      height: clamp(38.9375rem, 60vw, 50.875rem);
-    }
-    #hero-856 .cs-wave {
-      width: 100%;
-      left: 0;
-      /* flips it horizontally */
-      transform: scaleX(-1);
-    }
+  #hero-856 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
   }
+  #hero-856 .cs-content {
+    max-width: 39.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-856 .cs-topper {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #hero-856 .cs-title {
+    /* 39px - 61px */
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    /* 23 characters including spaces wide */
+    max-width: 23ch;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #hero-856 .cs-text {
+    /* 16px - 20px */
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 33.1875rem;
+    /* 28px - 40px */
+    margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
+    color: var(--bodyTextColor);
+  }
+  #hero-856 .cs-button-solid {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #hero-856 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #hero-856 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-856 .cs-picture {
+    width: 100%;
+    max-width: 35.625rem;
+    /* 400px - 712px */
+    height: clamp(25rem, 95vw, 44.5rem);
+    /* 100px - 200px */
+    border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
+    /* clips the img tag corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  #hero-856 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    /* ensures the top of the images is at the top of the container, no heads getting cut off */
+    object-position: top;
+  }
+  #hero-856 .cs-wave {
+    /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+    width: 320%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-856 {
+    text-align: left;
+  }
+  #hero-856 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #hero-856 .cs-content {
+    width: 40vw;
+    /* prevents flex-box from squishing it */
+    flex: none;
+    align-items: flex-start;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #hero-856 .cs-title,
+  #hero-856 .cs-text {
+    text-align: left;
+  }
+  #hero-856 .cs-picture {
+    /* 623px - 814px */
+    height: clamp(38.9375rem, 60vw, 50.875rem);    
+
+  }
+  #hero-856 .cs-wave {
+    width: 100%;
+    left: 0;
+    /* flips it horizontally */
+    transform: scaleX(-1);
+  }
+}
 
   /*-- -------------------------- -->
 <---         Services           -->
@@ -609,7 +620,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #services-1121 {
     padding: var(--sectionPadding);
-    background-color: #1a1a1a;
+    background-color: #664C2F;
     position: relative;
     z-index: 1;
   }
@@ -673,6 +684,7 @@ body {
   }
   #services-1121 .cs-h2 {
     /* 20px - 25px */
+    font-family: 'Rubik', sans-serif;
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: 700;
@@ -681,6 +693,7 @@ body {
     color: var(--bodyTextColorWhite);
   }
   #services-1121 .cs-item-text {
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     line-height: 1.5em;
     text-align: inherit;
@@ -726,6 +739,7 @@ body {
 @media only screen and (min-width: 0rem) {
   #gallery-1152 {
       padding: var(--sectionPadding);
+      background-color: #FAF0E6;
   }
   #gallery-1152 .cs-container {
       width: 100%;
@@ -749,9 +763,11 @@ body {
   }
 
   #gallery-1152 .cs-topper {
+      font-family: 'Rubik', sans-serif;
       color: #767676;
   }
   #gallery-1152 .cs-title {
+      font-family: 'Rubik', sans-serif;
       margin: 0;
   }
   #gallery-1152 .cs-gallery {
@@ -856,22 +872,7 @@ body {
       position: relative;
       z-index: 1;
   }
-  #cta-1394 .cs-content:before {
-      /* circle overlay */
-      content: "";
-      width: 48.375rem;
-      height: 48.375rem;
-      background: #1a1a1a;
-      opacity: 0.8;
-      border-radius: 50%;
-      position: absolute;
-      display: block;
-      /* -36px to -92px */
-      top: calc(clamp(2.25rem, 6vw, 5.75rem) * -1);
-      left: 50%;
-      z-index: -1;
-      transform: translateX(-50%);
-  }
+
 
   #cta-1394 .cs-title,
   #cta-1394 .cs-text {
@@ -893,6 +894,7 @@ body {
       z-index: 1;
   }
   #cta-1394 .cs-input {
+      font-family: 'Rubik', sans-serif;
       font-size: 1rem;
       width: 100%;
       /* 46px - 72px */
@@ -910,6 +912,7 @@ body {
       color: #767676;
   }
   #cta-1394 .cs-button-solid {
+      font-family: 'Rubik', sans-serif;
       font-size: 1rem;
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -999,7 +1002,7 @@ body {
 @media only screen and (min-width: 0rem) {
     #cs-footer-308 {
         padding: var(--sectionPadding);
-        background-color: #E4BB8E;
+        background-color: #664C2F;
         /* Navigation Links */
     }
     #cs-footer-308 .cs-container {
@@ -1033,6 +1036,7 @@ body {
     }
     #cs-footer-308 .cs-text {
         /* 14px - 16px */
+        font-family: 'Rubik', sans-serif;
         font-size: clamp(0.875rem, 2.5vw, 1rem);
         line-height: 1.5em;
         margin: 0;
@@ -1056,8 +1060,10 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        color: #ffffff;
     }
     #cs-footer-308 .cs-header {
+        font-family: 'Rubik', sans-serif;
         font-size: 1rem;
         line-height: 1.2em;
         text-transform: uppercase;
@@ -1068,6 +1074,7 @@ body {
         display: block;
     }
     #cs-footer-308 .cs-nav-link {
+        font-family: 'Rubik', sans-serif;
         font-size: 1rem;
         text-decoration: none;
         line-height: 1.5em;
@@ -1090,7 +1097,7 @@ body {
         transition: width 0.3s;
     }
     #cs-footer-308 .cs-nav-link:hover {
-        color: var(--primary);
+        color: #ffffff;
     }
     #cs-footer-308 .cs-nav-link:hover:before {
         width: 100%;
@@ -1105,13 +1112,14 @@ body {
         margin: auto;
         margin-top: 2rem;
         padding-top: 1.5rem;
-        border-top: 1px solid #484848;
+        border-top: 1px solid #ffffff;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #cs-footer-308 .cs-copyright,
     #cs-footer-308 .cs-copyright-link {
+        font-family: 'Rubik', sans-serif;
         font-size: 1rem;
         line-height: 1.5em;
         color: var(--bodyTextColorWhite);
